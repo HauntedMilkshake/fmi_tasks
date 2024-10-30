@@ -5,7 +5,7 @@ int main() {
     int month;
     std::cin >> month;
 
-    switch(month) { 
+    switch (month) { 
         case 12: case 1: case 2:
             std::cout << "The season is winter!";
             break;

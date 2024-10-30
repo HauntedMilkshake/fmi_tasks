@@ -7,9 +7,9 @@ int main() {
     int biggestNegativeNumber = std::numeric_limits<int>::min();
     int currentNumber;
 
-    for(int i = 0; i < numberCount; ++i) { 
+    for (int i = 0; i < numberCount; ++i) { 
         std::cin >> currentNumber;
-        if(currentNumber < 0 && currentNumber > biggestNegativeNumber) { 
+        if (currentNumber < 0 && currentNumber > biggestNegativeNumber) { 
             biggestNegativeNumber = currentNumber;
         }
     }

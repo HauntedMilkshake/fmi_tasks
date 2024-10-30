@@ -4,11 +4,11 @@ int main() {
 
     int sum = 0;
     int number;
-    while(true) { 
+    while (true) { 
         std::cin >> number;
         sum += number;
 
-        if(number == 0) { 
+        if (number == 0) { 
             break;
         }
     }
