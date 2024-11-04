@@ -7,7 +7,7 @@ int main() {
 
     int product = a * b;
 
-    std::cout << product << " " << (product / 100) << " " <<  (product % 2);
+    std::cout << product << " " << product % 10 << " " <<  (product % 2 == 0);
 
     return 0;
 }

@@ -3,7 +3,7 @@
 void checkOccurance(int number, int numberToCheck) { 
     int occurance = 0; 
     while (number != 0) { 
-        occurance += (number % numberToCheck == 0); 
+        occurance += ((number % 10) == numberToCheck); 
         number /= 10;
     }
     std::cout << "цифрата " << numberToCheck << " се среща " << occurance << " пъти";
