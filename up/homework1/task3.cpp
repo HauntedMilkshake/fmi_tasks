@@ -15,7 +15,7 @@ unsigned short int generateTraichoTweet(char tweet[1001], char tweets[4][281], u
     unsigned short int wordEnd = 0;
     unsigned short int paragraphStartIndex = 0;
     unsigned short int insertIndex = 0;
-    for (int i = 0; i < size; i++) { 
+    for (int i = 0; i < size; ++i) { 
 
         if (i == 0 || tweet[i - 1] != ' ') { 
             wordStart = i;
@@ -27,11 +27,11 @@ unsigned short int generateTraichoTweet(char tweet[1001], char tweets[4][281], u
             if (size >= 280 && i != 0 && i % 280 == 0) { 
                 fillTweets(tweet, tweets, wordEnd, insertIndex, paragraphStartIndex);
                 paragraphStartIndex = wordEnd;
-                insertIndex++;
+                ++insertIndex;
             } else if (i == size - 1) { 
                 fillTweets(tweet, tweets, wordStart + 1, insertIndex, paragraphStartIndex + 1);
                 paragraphStartIndex = wordEnd;
-                insertIndex++;
+                ++insertIndex;
                 break;
             }
     }
